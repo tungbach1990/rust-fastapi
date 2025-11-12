@@ -1,6 +1,6 @@
 #![allow(non_snake_case)]
-use libc::c_char;
-use std::ffi::CString;
+#[cfg(feature = "plugin")] use libc::c_char;
+#[cfg(feature = "plugin")] use std::ffi::CString;
 
 // C-ABI symbol used by the dynamic loader to identify the feature
 #[cfg(feature = "plugin")]

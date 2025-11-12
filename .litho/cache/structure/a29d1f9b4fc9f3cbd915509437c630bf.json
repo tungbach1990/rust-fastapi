@@ -1,0 +1,1877 @@
+{
+  "data": {
+    "project_name": "rust-fastapi",
+    "root_path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi",
+    "directories": [
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\admin\\config",
+        "name": "config",
+        "file_count": 1,
+        "subdirectory_count": 0,
+        "total_size": 424,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\admin\\src",
+        "name": "src",
+        "file_count": 1,
+        "subdirectory_count": 0,
+        "total_size": 43350,
+        "importance_score": 0.4
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\admin",
+        "name": "admin",
+        "file_count": 1,
+        "subdirectory_count": 2,
+        "total_size": 237,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\app\\src",
+        "name": "src",
+        "file_count": 8,
+        "subdirectory_count": 0,
+        "total_size": 65553,
+        "importance_score": 0.6000000000000001
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\app",
+        "name": "app",
+        "file_count": 1,
+        "subdirectory_count": 1,
+        "total_size": 974,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\assets\\skill-litho\\scripts",
+        "name": "scripts",
+        "file_count": 2,
+        "subdirectory_count": 0,
+        "total_size": 17593,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\assets\\skill-litho",
+        "name": "skill-litho",
+        "file_count": 0,
+        "subdirectory_count": 1,
+        "total_size": 0,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\assets",
+        "name": "assets",
+        "file_count": 0,
+        "subdirectory_count": 1,
+        "total_size": 0,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\docs\\4、深入探索",
+        "name": "4、深入探索",
+        "file_count": 0,
+        "subdirectory_count": 0,
+        "total_size": 0,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\docs",
+        "name": "docs",
+        "file_count": 0,
+        "subdirectory_count": 1,
+        "total_size": 0,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\cache",
+        "name": "cache",
+        "file_count": 2,
+        "subdirectory_count": 0,
+        "total_size": 14595,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\generator\\compose\\agents",
+        "name": "agents",
+        "file_count": 6,
+        "subdirectory_count": 0,
+        "total_size": 32772,
+        "importance_score": 0.2
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\generator\\compose",
+        "name": "compose",
+        "file_count": 3,
+        "subdirectory_count": 1,
+        "total_size": 2322,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\generator\\outlet",
+        "name": "outlet",
+        "file_count": 5,
+        "subdirectory_count": 0,
+        "total_size": 36103,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\generator\\preprocess\\agents\\prompts",
+        "name": "prompts",
+        "file_count": 0,
+        "subdirectory_count": 0,
+        "total_size": 0,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\generator\\preprocess\\agents",
+        "name": "agents",
+        "file_count": 4,
+        "subdirectory_count": 1,
+        "total_size": 13194,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\generator\\preprocess\\extractors\\language_processors",
+        "name": "language_processors",
+        "file_count": 10,
+        "subdirectory_count": 0,
+        "total_size": 116231,
+        "importance_score": 0.2
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\generator\\preprocess\\extractors",
+        "name": "extractors",
+        "file_count": 3,
+        "subdirectory_count": 1,
+        "total_size": 17716,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\generator\\preprocess",
+        "name": "preprocess",
+        "file_count": 2,
+        "subdirectory_count": 2,
+        "total_size": 4790,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\generator\\research\\agents",
+        "name": "agents",
+        "file_count": 7,
+        "subdirectory_count": 0,
+        "total_size": 30272,
+        "importance_score": 0.2
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\generator\\research",
+        "name": "research",
+        "file_count": 4,
+        "subdirectory_count": 1,
+        "total_size": 15122,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\generator",
+        "name": "generator",
+        "file_count": 6,
+        "subdirectory_count": 4,
+        "total_size": 31909,
+        "importance_score": 0.30000000000000004
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\llm\\client",
+        "name": "client",
+        "file_count": 8,
+        "subdirectory_count": 0,
+        "total_size": 41731,
+        "importance_score": 0.2
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\llm\\tools",
+        "name": "tools",
+        "file_count": 4,
+        "subdirectory_count": 0,
+        "total_size": 26599,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\llm",
+        "name": "llm",
+        "file_count": 1,
+        "subdirectory_count": 2,
+        "total_size": 31,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\memory",
+        "name": "memory",
+        "file_count": 1,
+        "subdirectory_count": 0,
+        "total_size": 3116,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\types",
+        "name": "types",
+        "file_count": 5,
+        "subdirectory_count": 0,
+        "total_size": 13410,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src\\utils",
+        "name": "utils",
+        "file_count": 7,
+        "subdirectory_count": 0,
+        "total_size": 38839,
+        "importance_score": 0.2
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme\\src",
+        "name": "src",
+        "file_count": 5,
+        "subdirectory_count": 6,
+        "total_size": 31508,
+        "importance_score": 0.5
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\autoreadme",
+        "name": "autoreadme",
+        "file_count": 2,
+        "subdirectory_count": 3,
+        "total_size": 2314,
+        "importance_score": 0.1
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\cors\\src",
+        "name": "src",
+        "file_count": 1,
+        "subdirectory_count": 0,
+        "total_size": 1892,
+        "importance_score": 0.4
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\cors",
+        "name": "cors",
+        "file_count": 1,
+        "subdirectory_count": 1,
+        "total_size": 205,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\oauth2\\src",
+        "name": "src",
+        "file_count": 1,
+        "subdirectory_count": 0,
+        "total_size": 1591,
+        "importance_score": 0.4
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\oauth2",
+        "name": "oauth2",
+        "file_count": 1,
+        "subdirectory_count": 1,
+        "total_size": 186,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\rate_limit\\src",
+        "name": "src",
+        "file_count": 1,
+        "subdirectory_count": 0,
+        "total_size": 1839,
+        "importance_score": 0.4
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\rate_limit",
+        "name": "rate_limit",
+        "file_count": 1,
+        "subdirectory_count": 1,
+        "total_size": 232,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\waf\\src",
+        "name": "src",
+        "file_count": 1,
+        "subdirectory_count": 0,
+        "total_size": 1257,
+        "importance_score": 0.4
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features\\waf",
+        "name": "waf",
+        "file_count": 1,
+        "subdirectory_count": 1,
+        "total_size": 183,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\features",
+        "name": "features",
+        "file_count": 0,
+        "subdirectory_count": 5,
+        "total_size": 0,
+        "importance_score": 0.1
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\assets_css\\src",
+        "name": "src",
+        "file_count": 2,
+        "subdirectory_count": 0,
+        "total_size": 253,
+        "importance_score": 0.4
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\assets_css",
+        "name": "assets_css",
+        "file_count": 1,
+        "subdirectory_count": 1,
+        "total_size": 249,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\assets_html\\src",
+        "name": "src",
+        "file_count": 2,
+        "subdirectory_count": 0,
+        "total_size": 518,
+        "importance_score": 0.4
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\assets_html",
+        "name": "assets_html",
+        "file_count": 1,
+        "subdirectory_count": 1,
+        "total_size": 250,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\assets_js\\src",
+        "name": "src",
+        "file_count": 2,
+        "subdirectory_count": 0,
+        "total_size": 228,
+        "importance_score": 0.4
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\assets_js",
+        "name": "assets_js",
+        "file_count": 1,
+        "subdirectory_count": 1,
+        "total_size": 248,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\assets_json\\src",
+        "name": "src",
+        "file_count": 2,
+        "subdirectory_count": 0,
+        "total_size": 405,
+        "importance_score": 0.4
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\assets_json",
+        "name": "assets_json",
+        "file_count": 1,
+        "subdirectory_count": 1,
+        "total_size": 248,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\assets_text\\src",
+        "name": "src",
+        "file_count": 1,
+        "subdirectory_count": 0,
+        "total_size": 224,
+        "importance_score": 0.4
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\assets_text",
+        "name": "assets_text",
+        "file_count": 1,
+        "subdirectory_count": 1,
+        "total_size": 250,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\assets_xml\\src",
+        "name": "src",
+        "file_count": 2,
+        "subdirectory_count": 0,
+        "total_size": 293,
+        "importance_score": 0.4
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\assets_xml",
+        "name": "assets_xml",
+        "file_count": 1,
+        "subdirectory_count": 1,
+        "total_size": 249,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\greetings\\src",
+        "name": "src",
+        "file_count": 1,
+        "subdirectory_count": 0,
+        "total_size": 6943,
+        "importance_score": 0.4
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\greetings",
+        "name": "greetings",
+        "file_count": 1,
+        "subdirectory_count": 1,
+        "total_size": 250,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\hello\\src",
+        "name": "src",
+        "file_count": 1,
+        "subdirectory_count": 0,
+        "total_size": 262,
+        "importance_score": 0.4
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\hello",
+        "name": "hello",
+        "file_count": 1,
+        "subdirectory_count": 1,
+        "total_size": 280,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\math\\src",
+        "name": "src",
+        "file_count": 1,
+        "subdirectory_count": 0,
+        "total_size": 177,
+        "importance_score": 0.4
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules\\math",
+        "name": "math",
+        "file_count": 1,
+        "subdirectory_count": 1,
+        "total_size": 263,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\modules",
+        "name": "modules",
+        "file_count": 0,
+        "subdirectory_count": 9,
+        "total_size": 0,
+        "importance_score": 0.1
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\module_utils\\src",
+        "name": "src",
+        "file_count": 1,
+        "subdirectory_count": 0,
+        "total_size": 1173,
+        "importance_score": 0.4
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\module_utils",
+        "name": "module_utils",
+        "file_count": 1,
+        "subdirectory_count": 1,
+        "total_size": 169,
+        "importance_score": 0.0
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\plugin_macro\\src",
+        "name": "src",
+        "file_count": 1,
+        "subdirectory_count": 0,
+        "total_size": 14513,
+        "importance_score": 0.4
+      },
+      {
+        "path": "C:\\Users\\BachNT\\Desktop\\bachnt\\rust\\rust-fastapi\\plugin_macro",
+        "name": "plugin_macro",
+        "file_count": 1,
+        "subdirectory_count": 1,
+        "total_size": 245,
+        "importance_score": 0.0
+      }
+    ],
+    "files": [
+      {
+        "path": "admin\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 237,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "admin\\config\\features.json",
+        "name": "features.json",
+        "size": 424,
+        "extension": "json",
+        "is_core": false,
+        "importance_score": 0.2,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "admin\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 43350,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762737639"
+      },
+      {
+        "path": "app\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 974,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762745359"
+      },
+      {
+        "path": "app\\src\\dynamic_loader.rs",
+        "name": "dynamic_loader.rs",
+        "size": 11220,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "app\\src\\features_loader.rs",
+        "name": "features_loader.rs",
+        "size": 7649,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762737490"
+      },
+      {
+        "path": "app\\src\\main.rs",
+        "name": "main.rs",
+        "size": 7689,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 1.0,
+        "complexity_score": 0.0,
+        "last_modified": "1762748626"
+      },
+      {
+        "path": "app\\src\\openapi.rs",
+        "name": "openapi.rs",
+        "size": 17049,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "app\\src\\router.rs",
+        "name": "router.rs",
+        "size": 7915,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762743838"
+      },
+      {
+        "path": "app\\src\\types.rs",
+        "name": "types.rs",
+        "size": 5447,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "app\\src\\util.rs",
+        "name": "util.rs",
+        "size": 380,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "app\\src\\watcher.rs",
+        "name": "watcher.rs",
+        "size": 8204,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 200,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762740319"
+      },
+      {
+        "path": "features\\autoreadme\\assets\\skill-litho\\scripts\\ci-setup.sh",
+        "name": "ci-setup.sh",
+        "size": 10910,
+        "extension": "sh",
+        "is_core": false,
+        "importance_score": 0.30000000000000004,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\assets\\skill-litho\\scripts\\quick-start.sh",
+        "name": "quick-start.sh",
+        "size": 6683,
+        "extension": "sh",
+        "is_core": false,
+        "importance_score": 0.2,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 1251,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.30000000000000004,
+        "complexity_score": 0.0,
+        "last_modified": "1762744545"
+      },
+      {
+        "path": "features\\autoreadme\\LICENSE",
+        "name": "LICENSE",
+        "size": 1063,
+        "extension": null,
+        "is_core": false,
+        "importance_score": 0.2,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\cache\\mod.rs",
+        "name": "mod.rs",
+        "size": 8425,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\cache\\performance_monitor.rs",
+        "name": "performance_monitor.rs",
+        "size": 6170,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\cli.rs",
+        "name": "cli.rs",
+        "size": 6177,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\config.rs",
+        "name": "config.rs",
+        "size": 15939,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.9000000000000001,
+        "complexity_score": 0.0,
+        "last_modified": "1762741588"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\agent_executor.rs",
+        "name": "agent_executor.rs",
+        "size": 4605,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\compose\\agents\\architecture_editor.rs",
+        "name": "architecture_editor.rs",
+        "size": 6379,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\compose\\agents\\boundary_editor.rs",
+        "name": "boundary_editor.rs",
+        "size": 10789,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\compose\\agents\\key_modules_insight_editor.rs",
+        "name": "key_modules_insight_editor.rs",
+        "size": 5092,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762745714"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\compose\\agents\\mod.rs",
+        "name": "mod.rs",
+        "size": 140,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\compose\\agents\\overview_editor.rs",
+        "name": "overview_editor.rs",
+        "size": 3852,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\compose\\agents\\workflow_editor.rs",
+        "name": "workflow_editor.rs",
+        "size": 6520,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\compose\\memory.rs",
+        "name": "memory.rs",
+        "size": 106,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\compose\\mod.rs",
+        "name": "mod.rs",
+        "size": 1588,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\compose\\types.rs",
+        "name": "types.rs",
+        "size": 628,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\context.rs",
+        "name": "context.rs",
+        "size": 1692,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\mod.rs",
+        "name": "mod.rs",
+        "size": 173,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\outlet\\fixer.rs",
+        "name": "fixer.rs",
+        "size": 3929,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\outlet\\mod.rs",
+        "name": "mod.rs",
+        "size": 3745,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762739061"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\outlet\\readme_outlet.rs",
+        "name": "readme_outlet.rs",
+        "size": 3865,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762739043"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\outlet\\summary_generator.rs",
+        "name": "summary_generator.rs",
+        "size": 22479,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\outlet\\summary_outlet.rs",
+        "name": "summary_outlet.rs",
+        "size": 2085,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\agents\\code_analyze.rs",
+        "name": "code_analyze.rs",
+        "size": 5623,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\agents\\code_purpose_analyze.rs",
+        "name": "code_purpose_analyze.rs",
+        "size": 3252,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\agents\\mod.rs",
+        "name": "mod.rs",
+        "size": 83,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\agents\\relationships_analyze.rs",
+        "name": "relationships_analyze.rs",
+        "size": 4236,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\extractors\\language_processors\\java.rs",
+        "name": "java.rs",
+        "size": 13962,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\extractors\\language_processors\\javascript.rs",
+        "name": "javascript.rs",
+        "size": 14438,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\extractors\\language_processors\\kotlin.rs",
+        "name": "kotlin.rs",
+        "size": 14631,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\extractors\\language_processors\\mod.rs",
+        "name": "mod.rs",
+        "size": 4526,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\extractors\\language_processors\\python.rs",
+        "name": "python.rs",
+        "size": 12667,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\extractors\\language_processors\\react.rs",
+        "name": "react.rs",
+        "size": 11269,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\extractors\\language_processors\\rust.rs",
+        "name": "rust.rs",
+        "size": 13262,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\extractors\\language_processors\\svelte.rs",
+        "name": "svelte.rs",
+        "size": 8460,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\extractors\\language_processors\\typescript.rs",
+        "name": "typescript.rs",
+        "size": 14925,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\extractors\\language_processors\\vue.rs",
+        "name": "vue.rs",
+        "size": 8091,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\extractors\\mod.rs",
+        "name": "mod.rs",
+        "size": 95,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\extractors\\original_document_extractor.rs",
+        "name": "original_document_extractor.rs",
+        "size": 962,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\extractors\\structure_extractor.rs",
+        "name": "structure_extractor.rs",
+        "size": 16659,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762746185"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\memory.rs",
+        "name": "memory.rs",
+        "size": 405,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\preprocess\\mod.rs",
+        "name": "mod.rs",
+        "size": 4385,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\research\\agents\\architecture_researcher.rs",
+        "name": "architecture_researcher.rs",
+        "size": 1905,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\research\\agents\\boundary_analyzer.rs",
+        "name": "boundary_analyzer.rs",
+        "size": 10295,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\research\\agents\\domain_modules_detector.rs",
+        "name": "domain_modules_detector.rs",
+        "size": 2954,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 1.0,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\research\\agents\\key_modules_insight.rs",
+        "name": "key_modules_insight.rs",
+        "size": 11361,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\research\\agents\\mod.rs",
+        "name": "mod.rs",
+        "size": 186,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\research\\agents\\system_context_researcher.rs",
+        "name": "system_context_researcher.rs",
+        "size": 1983,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\research\\agents\\workflow_researcher.rs",
+        "name": "workflow_researcher.rs",
+        "size": 1588,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\research\\memory.rs",
+        "name": "memory.rs",
+        "size": 817,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\research\\mod.rs",
+        "name": "mod.rs",
+        "size": 844,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\research\\orchestrator.rs",
+        "name": "orchestrator.rs",
+        "size": 2255,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\research\\types.rs",
+        "name": "types.rs",
+        "size": 11206,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\step_forward_agent.rs",
+        "name": "step_forward_agent.rs",
+        "size": 20975,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\types.rs",
+        "name": "types.rs",
+        "size": 167,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\generator\\workflow.rs",
+        "name": "workflow.rs",
+        "size": 4297,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762739105"
+      },
+      {
+        "path": "features\\autoreadme\\src\\i18n.rs",
+        "name": "i18n.rs",
+        "size": 8893,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 173,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1762746171"
+      },
+      {
+        "path": "features\\autoreadme\\src\\llm\\client\\agent_builder.rs",
+        "name": "agent_builder.rs",
+        "size": 1818,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\llm\\client\\mod.rs",
+        "name": "mod.rs",
+        "size": 8068,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\llm\\client\\providers.rs",
+        "name": "providers.rs",
+        "size": 16902,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\llm\\client\\react.rs",
+        "name": "react.rs",
+        "size": 2616,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\llm\\client\\react_executor.rs",
+        "name": "react_executor.rs",
+        "size": 4379,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\llm\\client\\summary_reasoner.rs",
+        "name": "summary_reasoner.rs",
+        "size": 5986,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\llm\\client\\types.rs",
+        "name": "types.rs",
+        "size": 856,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\llm\\client\\utils.rs",
+        "name": "utils.rs",
+        "size": 1106,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\llm\\mod.rs",
+        "name": "mod.rs",
+        "size": 31,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\llm\\tools\\file_explorer.rs",
+        "name": "file_explorer.rs",
+        "size": 18202,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\llm\\tools\\file_reader.rs",
+        "name": "file_reader.rs",
+        "size": 5473,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\llm\\tools\\mod.rs",
+        "name": "mod.rs",
+        "size": 58,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\llm\\tools\\time.rs",
+        "name": "time.rs",
+        "size": 2866,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\main.rs",
+        "name": "main.rs",
+        "size": 326,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\memory\\mod.rs",
+        "name": "mod.rs",
+        "size": 3116,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\types\\code.rs",
+        "name": "code.rs",
+        "size": 10035,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\types\\code_releationship.rs",
+        "name": "code_releationship.rs",
+        "size": 1922,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\types\\mod.rs",
+        "name": "mod.rs",
+        "size": 713,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\types\\original_document.rs",
+        "name": "original_document.rs",
+        "size": 218,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\types\\project_structure.rs",
+        "name": "project_structure.rs",
+        "size": 522,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\utils\\file_utils.rs",
+        "name": "file_utils.rs",
+        "size": 4772,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\utils\\mod.rs",
+        "name": "mod.rs",
+        "size": 143,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\utils\\project_structure_formatter.rs",
+        "name": "project_structure_formatter.rs",
+        "size": 11421,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\utils\\prompt_compressor.rs",
+        "name": "prompt_compressor.rs",
+        "size": 9209,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\utils\\sources.rs",
+        "name": "sources.rs",
+        "size": 8507,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\utils\\threads.rs",
+        "name": "threads.rs",
+        "size": 716,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\autoreadme\\src\\utils\\token_estimator.rs",
+        "name": "token_estimator.rs",
+        "size": 4071,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1761818118"
+      },
+      {
+        "path": "features\\cors\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 205,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762737488"
+      },
+      {
+        "path": "features\\cors\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 1892,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762737330"
+      },
+      {
+        "path": "features\\oauth2\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 186,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "features\\oauth2\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 1591,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "features\\rate_limit\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 232,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "features\\rate_limit\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 1839,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "features\\waf\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 183,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "features\\waf\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 1257,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_css\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 249,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_css\\src\\app.css",
+        "name": "app.css",
+        "size": 58,
+        "extension": "css",
+        "is_core": false,
+        "importance_score": 0.4,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_css\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 195,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_html\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 250,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_html\\src\\index.html",
+        "name": "index.html",
+        "size": 315,
+        "extension": "html",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_html\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 203,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_js\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 248,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_js\\src\\app.js",
+        "name": "app.js",
+        "size": 37,
+        "extension": "js",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_js\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 191,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_json\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 248,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_json\\src\\data.json",
+        "name": "data.json",
+        "size": 65,
+        "extension": "json",
+        "is_core": false,
+        "importance_score": 0.4,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_json\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 340,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_text\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 250,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_text\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 224,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_xml\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 249,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_xml\\src\\data.xml",
+        "name": "data.xml",
+        "size": 69,
+        "extension": "xml",
+        "is_core": false,
+        "importance_score": 0.4,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\assets_xml\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 224,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\greetings\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 250,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\greetings\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 6943,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\hello\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 280,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\hello\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 262,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\math\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 263,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "modules\\math\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 177,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.6,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "module_utils\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 169,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "module_utils\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 1173,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "plugin_macro\\Cargo.toml",
+        "name": "Cargo.toml",
+        "size": 245,
+        "extension": "toml",
+        "is_core": false,
+        "importance_score": 0.1,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      },
+      {
+        "path": "plugin_macro\\src\\lib.rs",
+        "name": "lib.rs",
+        "size": 14513,
+        "extension": "rs",
+        "is_core": true,
+        "importance_score": 0.8,
+        "complexity_score": 0.0,
+        "last_modified": "1762736819"
+      }
+    ],
+    "total_files": 135,
+    "total_directories": 62,
+    "file_types": {
+      "xml": 1,
+      "html": 1,
+      "json": 2,
+      "js": 1,
+      "toml": 19,
+      "sh": 2,
+      "rs": 107,
+      "css": 1
+    },
+    "size_distribution": {
+      "small": 57,
+      "tiny": 55,
+      "medium": 23
+    }
+  },
+  "timestamp": 1762748923,
+  "prompt_hash": "a29d1f9b4fc9f3cbd915509437c630bf",
+  "token_usage": null,
+  "model_name": null
+}

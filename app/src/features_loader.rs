@@ -39,52 +39,82 @@ fn built_candidates_for(feature_dir: &Path, build_dir: &Path) -> Vec<std::path::
     ]
 }
 
-pub fn load_features(_features_src_dir: &str, build_dir: &str) -> Vec<String> {
-    // Chỉ nạp feature plugins từ thư mục build, không phụ thuộc vào thư mục source `features/*`
+// Tự động phát hiện tên feature từ thư mục features/
+fn discover_feature_names(features_dir: &str) -> Vec<String> {
+    let mut names = Vec::new();
+    if let Ok(rd) = std::fs::read_dir(features_dir) {
+        for e in rd.flatten() {
+            let p = e.path();
+            if p.is_dir() && p.join("Cargo.toml").exists() {
+                if let Some(name) = p.file_name().map(|s| s.to_string_lossy().to_string()) {
+                    names.push(name);
+                }
+            }
+        }
+    }
+    names.sort();
+    names
+}
+
+pub fn load_features(features_src_dir: &str, build_dir: &str) -> Vec<String> {
+    // Tự động phát hiện features từ thư mục source
+    let feature_names = discover_feature_names(features_src_dir);
     let settings = load_settings();
     let mut loaded: Vec<String> = Vec::new();
     let build_dir_path = Path::new(build_dir);
 
-    if let Ok(rd) = std::fs::read_dir(build_dir_path) {
-        for e in rd.flatten() {
-            let p = e.path();
-            let fname = p.file_name().and_then(|s| s.to_str()).unwrap_or("").to_lowercase();
-            // Chỉ thử nạp các thư viện có khả năng là feature: tên chứa oauth2, rate_limit, waf
-            if !(fname.contains("oauth2") || fname.contains("rate_limit") || fname.contains("waf")) { continue; }
-            if !p.is_file() { continue; }
+    // Thử nạp từng feature đã phát hiện
+    for feature_name in feature_names {
+        // Bỏ qua nếu bị disable
+        if settings.disabled_features.iter().any(|f| f == &feature_name) {
+            info!("⏭️ Feature {} bị disable, bỏ qua", feature_name);
+            continue;
+        }
 
-            // Bỏ qua nếu bị disable trong settings theo tên phổ biến
-            let name_hint = if fname.contains("oauth2") { "oauth2" } else if fname.contains("rate_limit") { "rate_limit" } else if fname.contains("waf") { "waf" } else { "" };
-            if !name_hint.is_empty() && settings.disabled_features.iter().any(|f| f == name_hint) { continue; }
+        // Tìm file DLL/SO tương ứng trong build_dir
+        let feature_dir = Path::new(features_src_dir).join(&feature_name);
+        let candidates = built_candidates_for(&feature_dir, build_dir_path);
 
-            unsafe {
-                match Library::new(&p) {
-                    Ok(lib) => {
-                        type RawStr = *mut std::os::raw::c_char;
-                        // Try generic symbol name first; fallback to crate-specific names
-                        let sym_candidates: &[&[u8]] = &[
-                            b"feature_name\0",
-                            if fname.contains("oauth2") { b"feature_name_oauth2\0" } else { b"_\0" },
-                            if fname.contains("rate_limit") { b"feature_name_rate_limit\0" } else { b"_\0" },
-                            if fname.contains("waf") { b"feature_name_waf\0" } else { b"_\0" },
-                        ];
-                        for &sym_name in sym_candidates {
-                            if sym_name == b"_\0" { continue; }
-                            if let Ok(sym) = lib.get::<unsafe extern "C" fn() -> RawStr>(sym_name) {
-                                let ptr = sym();
-                                if !ptr.is_null() {
-                                    let cstr = CStr::from_ptr(ptr);
-                                    let s = cstr.to_string_lossy().to_string();
-                                    let _ = CString::from_raw(ptr);
-                                    info!("🧩 Feature loaded: {} from {:?}", s, p);
-                                    loaded.push(s.clone());
-                                    break;
-                                }
+        let lib_path = candidates.into_iter().find(|p| p.exists());
+        let Some(p) = lib_path else {
+            warn!("⚠️ Không tìm thấy thư viện build cho feature {}", feature_name);
+            continue;
+        };
+
+        if !p.is_file() { continue; }
+
+        unsafe {
+            match Library::new(&p) {
+                Ok(lib) => {
+                    type RawStr = *mut std::os::raw::c_char;
+                    // Thử các tên symbol có thể có
+                    let sym_name_generic = format!("feature_name_{}\0", feature_name);
+                    let sym_candidates: Vec<&[u8]> = vec![
+                        b"feature_name\0",
+                        sym_name_generic.as_bytes(),
+                    ];
+
+                    let mut found = false;
+                    for sym_name in sym_candidates {
+                        if let Ok(sym) = lib.get::<unsafe extern "C" fn() -> RawStr>(sym_name) {
+                            let ptr = sym();
+                            if !ptr.is_null() {
+                                let cstr = CStr::from_ptr(ptr);
+                                let s = cstr.to_string_lossy().to_string();
+                                let _ = CString::from_raw(ptr);
+                                info!("🧩 Feature loaded: {} from {:?}", s, p);
+                                loaded.push(s.clone());
+                                found = true;
+                                break;
                             }
                         }
                     }
-                    Err(e) => { warn!("⚠️ Lỗi nạp feature {:?}: {}", p, e); }
+
+                    if !found {
+                        warn!("⚠️ Feature {} không export symbol feature_name", feature_name);
+                    }
                 }
+                Err(e) => { warn!("⚠️ Lỗi nạp feature {:?}: {}", p, e); }
             }
         }
     }
@@ -95,54 +125,77 @@ pub fn load_features(_features_src_dir: &str, build_dir: &str) -> Vec<String> {
 
 // Thu thập manifest UI của các feature plugins để Admin UI tự động sinh
 pub fn collect_manifests(build_dir: &str) -> Vec<Value> {
+    // Tự động phát hiện features từ thư mục features/
+    let feature_names = discover_feature_names("./features");
     let settings = load_settings();
     let mut manifests: Vec<Value> = Vec::new();
     let build_dir_path = Path::new(build_dir);
 
-    if let Ok(rd) = std::fs::read_dir(build_dir_path) {
-        for e in rd.flatten() {
-            let p = e.path();
-            let fname = p.file_name().and_then(|s| s.to_str()).unwrap_or("").to_lowercase();
-            if !(fname.contains("oauth2") || fname.contains("rate_limit") || fname.contains("waf")) { continue; }
-            if !p.is_file() { continue; }
+    for feature_name in feature_names {
+        // Bỏ qua nếu bị disable (nhưng vẫn hiển thị trong UI để có thể bật lại)
+        // if settings.disabled_features.iter().any(|f| f == &feature_name) { continue; }
 
-            let name_hint = if fname.contains("oauth2") { "oauth2" } else if fname.contains("rate_limit") { "rate_limit" } else if fname.contains("waf") { "waf" } else { "" };
-            if !name_hint.is_empty() && settings.disabled_features.iter().any(|f| f == name_hint) { continue; }
+        // Tìm file DLL/SO tương ứng
+        let feature_dir = Path::new("./features").join(&feature_name);
+        let candidates = built_candidates_for(&feature_dir, build_dir_path);
 
-            unsafe {
-                match Library::new(&p) {
-                    Ok(lib) => {
-                        type RawStr = *mut std::os::raw::c_char;
-                        let sym_candidates: &[&[u8]] = &[
-                            b"feature_manifest\0",
-                            if fname.contains("oauth2") { b"feature_manifest_oauth2\0" } else { b"_\0" },
-                            if fname.contains("rate_limit") { b"feature_manifest_rate_limit\0" } else { b"_\0" },
-                            if fname.contains("waf") { b"feature_manifest_waf\0" } else { b"_\0" },
-                        ];
-                        for &sym_name in sym_candidates {
-                            if sym_name == b"_\0" { continue; }
-                            if let Ok(sym) = lib.get::<unsafe extern "C" fn() -> RawStr>(sym_name) {
-                                let ptr = sym();
-                                if !ptr.is_null() {
-                                    let cstr = CStr::from_ptr(ptr);
-                                    let s = cstr.to_string_lossy().to_string();
-                                    let _ = CString::from_raw(ptr);
-                                    if let Ok(v) = serde_json::from_str::<Value>(&s) {
-                                        manifests.push(v);
-                                    } else {
-                                        warn!("⚠️ feature_manifest JSON invalid in {:?}", p);
-                                    }
-                                    let _keep_alive: &'static Library = Box::leak(Box::new(lib));
-                                    break;
+        let lib_path = candidates.into_iter().find(|p| p.exists());
+        let Some(p) = lib_path else {
+            warn!("⚠️ Không tìm thấy thư viện build cho feature {} (manifest)", feature_name);
+            continue;
+        };
+
+        if !p.is_file() { continue; }
+
+        unsafe {
+            match Library::new(&p) {
+                Ok(lib) => {
+                    type RawStr = *mut std::os::raw::c_char;
+                    let sym_name_generic = format!("feature_manifest_{}\0", feature_name);
+                    let sym_candidates: Vec<&[u8]> = vec![
+                        b"feature_manifest\0",
+                        sym_name_generic.as_bytes(),
+                    ];
+
+                    for sym_name in sym_candidates {
+                        if let Ok(sym) = lib.get::<unsafe extern "C" fn() -> RawStr>(sym_name) {
+                            let ptr = sym();
+                            if !ptr.is_null() {
+                                let cstr = CStr::from_ptr(ptr);
+                                let s = cstr.to_string_lossy().to_string();
+                                let _ = CString::from_raw(ptr);
+                                if let Ok(v) = serde_json::from_str::<Value>(&s) {
+                                    manifests.push(v);
+                                } else {
+                                    warn!("⚠️ feature_manifest JSON invalid in {:?}", p);
                                 }
+                                let _keep_alive: &'static Library = Box::leak(Box::new(lib));
+                                break;
                             }
                         }
                     }
-                    Err(e) => { warn!("⚠️ Lỗi nạp feature {:?}: {}", p, e); }
                 }
+                Err(e) => { warn!("⚠️ Lỗi nạp feature {:?}: {}", p, e); }
             }
         }
     }
 
     manifests
+}
+
+// Helper: kiểm tra xem một feature có mặt trong build theo tên thường (vd: "cors")
+pub fn has_feature(build_dir: &str, name: &str) -> bool {
+    let name = name.to_ascii_lowercase();
+    let dir = std::path::Path::new(build_dir);
+    if let Ok(rd) = std::fs::read_dir(dir) {
+        for e in rd.flatten() {
+            let p = e.path();
+            if !p.is_file() { continue; }
+            if let Some(fname) = p.file_name().and_then(|s| s.to_str()) {
+                let f = fname.to_ascii_lowercase();
+                if f.contains(&name) { return true; }
+            }
+        }
+    }
+    false
 }

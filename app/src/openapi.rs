@@ -120,7 +120,15 @@ pub fn build_openapi_from_modules(modules_dir: &str, build_dir: &str) -> Value {
                                         // gắn nhãn module theo tên thư mục
                                         map.insert("x-module".to_string(), Value::String(folder_name.clone()));
                                         // security cho operation: chỉ thêm bearerAuth nếu route đã tick
-                                        let security_vec = if settings.oauth2_enabled && route_is_protected(&route, &settings.oauth2_protected_routes) {
+                                        let oauth2_protected_routes: Vec<String> = if let Some(obj) = settings.feature_extras.get("oauth2").and_then(|v| v.as_object()) {
+                                            obj.get("protected_routes")
+                                                .and_then(|v| v.as_array())
+                                                .map(|arr| arr.iter().filter_map(|x| x.as_str().map(|s| s.to_string())).collect())
+                                                .unwrap_or_default()
+                                        } else {
+                                            Vec::new()
+                                        };
+                                        let security_vec = if settings.oauth2_enabled && route_is_protected(&route, &oauth2_protected_routes) {
                                             vec![json!({"apiKeyAuth": []}), json!({"bearerAuth": []})]
                                         } else {
                                             vec![json!({"apiKeyAuth": []})]
@@ -204,7 +212,15 @@ pub fn build_openapi_from_modules(modules_dir: &str, build_dir: &str) -> Value {
                                 .unwrap_or_else(|| "application/json".to_string());
 
                             // security cho operation: chỉ thêm bearerAuth nếu route đã tick
-                            let security_vec = if settings.oauth2_enabled && route_is_protected(&route, &settings.oauth2_protected_routes) {
+                            let oauth2_protected_routes: Vec<String> = if let Some(obj) = settings.feature_extras.get("oauth2").and_then(|v| v.as_object()) {
+                                obj.get("protected_routes")
+                                    .and_then(|v| v.as_array())
+                                    .map(|arr| arr.iter().filter_map(|x| x.as_str().map(|s| s.to_string())).collect())
+                                    .unwrap_or_default()
+                            } else {
+                                Vec::new()
+                            };
+                            let security_vec = if settings.oauth2_enabled && route_is_protected(&route, &oauth2_protected_routes) {
                                 vec![json!({"apiKeyAuth": []}), json!({"bearerAuth": []})]
                             } else {
                                 vec![json!({"apiKeyAuth": []})]
