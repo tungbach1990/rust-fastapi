@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🚀 Rust FastAPI - Admin Console</title>
+  <link rel="stylesheet" href="/admin/assets/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">
+      <span class="brand-icon">🚀</span>
+      <span>Rust FastAPI Admin</span>
+    </div>
+    <div class="searchbar">
+      <input id="global-search" type="text" placeholder="🔍 Tìm kiếm modules, features, routes... (Enter)" />
+    </div>
+    <div class="actions">
+      <button onclick="openCmdPalette(true)" class="btn btn-primary">⌘ Command</button>
+    </div>
+  </div>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="menu-title">Navigation</div>
+      <div class="menu">
+        <a href="#overview"><span class="menu-icon">📊</span> Dashboard</a>
+        <a href="#modules"><span class="menu-icon">📦</span> Modules</a>
+        <a href="#features"><span class="menu-icon">⚡</span> Features</a>
+      </div>
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-label">Total Routes</div>
+          <div class="stat-value" id="stat-routes">0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Active Modules</div>
+          <div class="stat-value" id="stat-modules">0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Enabled Features</div>
+          <div class="stat-value" id="stat-features">0</div>
+        </div>
+      </div>
+    </aside>
+    <main class="content">
+      <!-- Dashboard Overview -->
+      <section id="overview" class="section">
+        <div class="section-header">
+          <h1 class="section-title">📊 Dashboard</h1>
+          <p class="section-subtitle">Tổng quan hệ thống Rust FastAPI</p>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-title">🛣️ Routes</div>
+            <div style="font-size: 36px; font-weight: 700; color: var(--accent);" id="ov-routes">0</div>
+            <div class="section-subtitle">Total API endpoints</div>
+          </div>
+          <div class="card">
+            <div class="card-title">📦 Modules</div>
+            <div style="font-size: 36px; font-weight: 700; color: var(--ok);" id="ov-modules">0</div>
+            <div class="section-subtitle">Active modules</div>
+          </div>
+          <div class="card">
+            <div class="card-title">⚡ Features</div>
+            <div style="font-size: 36px; font-weight: 700; color: var(--warn);" id="ov-features">0</div>
+            <div class="section-subtitle">Enabled features</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modules Section -->
+      <section id="modules" class="section">
+        <div class="section-header">
+          <h1 class="section-title">📦 Modules</h1>
+          <p class="section-subtitle">Quản lý các module độc lập trong thư mục modules/</p>
+          <div style="display: flex; gap: 8px; margin-top: 12px;">
+            <button id="enable-all-modules-btn" class="btn btn-primary">✅ Enable All</button>
+            <button id="disable-all-modules-btn" class="btn">❌ Disable All</button>
+          </div>
+        </div>
+        <div id="module-list" class="card-grid"></div>
+
+        <!-- Module Routes Configuration -->
+        <div id="module-routes-config" style="margin-top: 24px;">
+          <div class="card">
+            <div class="card-title">
+              <span>🛣️ Routes theo Module</span>
+            </div>
+            <div id="module-routes-tabs" class="tabs" data-active=""></div>
+            <div class="tab-content">
+              <h3 id="module-routes-tab-title">Chọn module để xem routes</h3>
+              <div id="module-routes-tab-content"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="section">
+        <div class="section-header">
+          <h1 class="section-title">⚡ Features</h1>
+          <p class="section-subtitle">Quản lý các tính năng trong thư mục features/</p>
+          <div style="display: flex; gap: 8px; margin-top: 12px;">
+            <button id="enable-all-features-btn" class="btn btn-primary">✅ Enable All</button>
+            <button id="disable-all-features-btn" class="btn">❌ Disable All</button>
+          </div>
+        </div>
+        <div id="feature-list" class="card-grid"></div>
+
+        <!-- Feature Configuration -->
+        <div id="feature-config" style="margin-top: 24px;">
+          <div class="card">
+            <div class="card-title">⚙️ Cấu hình Features</div>
+            <div id="feature-tabs" class="tabs" data-active=""></div>
+            <div class="tab-content">
+              <h3 id="feature-tab-title">Chưa có tính năng nào được bật</h3>
+              <div id="feature-tab-content"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <!-- Command Palette Overlay -->
+  <div class="cmd-overlay" id="cmd-overlay">
+    <div class="cmd-box">
+      <h3>Command Palette</h3>
+      <input id="cmd-input" class="cmd-input" placeholder="Ví dụ: bật rate limit | mở cấu hình oauth2 | lọc routes module hello" />
+      <div class="cmd-hints" id="smart-hints">
+        <span class="hint" data-cmd="open overview">Tới Tổng quan</span>
+        <span class="hint" data-cmd="open features">Tới Tính năng</span>
+        <span class="hint" data-cmd="open modules">Tới Modules</span>
+        <span class="hint" data-cmd="open routes">Tới Routes</span>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Fallback: đảm bảo init() chạy ngay cả khi onload bị override
+    (async () => { try { await init(); } catch (e) { console.error('Init error:', e); } })();
+  </script>
+</body>
+  <script src="/admin/assets/app.js"></script>
+  <script>
+    // Fallback: đảm bảo init() chạy ngay cả khi onload bị override
+    (async () => { try { await init(); } catch (e) { console.error('Init error:', e); } })();
+  </script>
+</body>
+</html>
